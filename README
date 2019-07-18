@@ -1,0 +1,74 @@
+README file for Final Project // May 4, 2018
+
+TEAM
+Andrew Bell             abell43
+Debanik Purkayastha     dpurkay1
+Sindhu Banerjee         sbanerj9
+
+DESIGN
+The overall design of this chess game program is as follows:
+
+First we defined all legal moves for the pieces on the board (king, queen, rook, bishop, knight, pawn). This involved returning true for any legal moves, and returning false for
+anything else. For example, for the queen, we only returned true if the column difference was equal to the row difference (diagonal movement), or if the column start was equal to the
+column end / row start was equal to the row end (lateral movement). Of course, we returned false for some edge cases, for example if the ending position was the same as the starting
+position.
+
+Then we designed the movement of all the pieces, which was simply checking if the move was legal [for that piece], checking if the space was open, and checking if the space was
+on the board, then calling the function 'make_move'. After we moved onto capturing pieces, we no longer needed to check if the space was open (except for pawn).  Instead, we would check
+'legal_capture_shape' (which was the same as 'legal_move_shape' for all pieces except for pawn and potentially mystery piece) and moved the piece to that location while also deleting
+the opponents piece beforehand. One could only capture a piece if it was of the opposite color. If an invalid command is entered, it will not make any move and tell the same player that
+it is still their turn.
+
+The design of pawn promotion was quite simple. If a white pawn made it to row 8, or a black pawn made it to row 1, it would be deleted from the board and a fully functioning queen
+of the same color would be added to that exact position.
+
+Our constant boolean function 'in_check' returned true if a black piece could attack the white king or if a white piece could attack the black king. To accomplish this, we created
+a 'check_for_obstruction' function which would check all the spaces between the starting postion of a piece and the ending position of a piece to see if there were any other pieces
+blocking the path of 'legal_capture_shape'. If a piece had a legal capture path to the king, then the 'in_check' boolean would be rendered true. The knignt was exempt from
+'check_for_obstruction' since it can jump over pieces.
+
+Our boolean function 'in_mate' returns true if a player cannot make any legal moves and is also in check. We did this by simulating all possible moves on the board (for whichever
+color had the current turn) and if we found just one possible legal move that the player could make that resulted with the King not in check, then we returned false and broke out of
+the loop. If the function looped through all the pieces and found 0 possible legal moves, AND the king of the respective color was in check, then 'in_mate' was rendered true.
+
+The boolean function 'in_stalemate' was very similar to the 'in_mate' function. Again, we checked if the player who's turn it was could make any possible moves, and if the player had
+0 possible moves AND was explicitly not in check, then 'in_stalemate' was rendered true.
+
+The save game function saves the current board as a txt file with dashes for blank spaces and piece designator char for piece. We used the builtin chess << operator in conjunction with
+the built-in chess << operator.
+For the load game functionality, we had to write input (>>) operators for both board and chess. First we would delete all pieces on the board. Then the input operator for board would go
+through a text file and add pieces to the board if there was a char designator in the text file. Inside the chess >> operator, we would look for the last char on the file, which would
+tell whose turn it is, (W for white, B for black).
+We had to make the input operator a friend function to give it access to the private variables in chess (i.e. the variables Board and turn_white).
+
+For our mystery piece, we gave it the ability to move 3 spaces side-to-side and 2 spaces up/down, or 2 spaces side-to-side and 3 spaces up/down, like a super knight. To test this mystery
+piece, we substituted it in for our knights on the board and played the game with them. During testing, these pieces were able to check and checkmate. The mystery piece was given the
+'M'/'m' char designator. Since OUR mystery piece passed all our tests, we presume that a new mystery piece should also work fine.
+
+Lastly, our makefile compiled all of the files properly and in one command, we create board, chess, create_piece, and then every single piece, which saves a great deal of time and effort.
+We have individual .o's for every single piece, chess, board, main, and create_piece.
+
+We followed a top-down programming style in which we began by specifing complex parts of the program and dividing them into successively smaller parts. We created smaller functions
+such as 'check_for_obstruction' and 'delete_piece' to further reduce complexity.
+
+COMPLETENESS
+
+The entirety of the chess games works in accordance with the rules of chess (with the exception of en passant and castling as mandated). All pieces are able to move properly and
+capture properly. All our tests for different stalemate, check, and checkmate scenarios passed.
+
+However, many parts of our code are still relatively complex or inefficient. While we were able to trim down the 'in_check' function, our 'in_mate' and 'in_stalemate' each have one major
+repetition since we checked separately for black and white. We attempted to create a single helper function that we could pass paramters into, but to no avail. Lastly, there is some
+unneeded complexity in our multi-nested if-statements for the aforementioned functions.
+
+Since we did not know whether we could change the parameters of the in_check function provided to us, in order to keep both in_mate and in_stalemate const we created a copy constructor and
+an equals operator for board. Because we used a copy for board and not the real thing the in_check method provided did not check the board correctly and once we were in check we
+immediately went into checkmate. To solve this we made a in_check_copy method that is the exact same thing as the in_check method only it uses the extra parameter of the copy of the board
+itself.
+
+Although we finished the project and it runs smoothly there are still some memory leaks that are in the program. Although we added some deconstructors it seemed that the memory leaks were
+not getting any smaller. 
+
+
+SPECIAL INSTRUCTIONS
+
+N/A

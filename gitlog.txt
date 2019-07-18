@@ -1,0 +1,233 @@
+commit fc2e8e1c6fd51a85deff1112305b45fdfd1d775b
+Author: Debanik Purkayastha <dpurkay1@jhu.edu>
+Date:   Fri May 4 22:32:55 2018 -0400
+
+    done
+
+commit 7faad8c7d45cc349d78fa1ed2cc365772c10bad0
+Author: Andrew <abell43@jhu.edu>
+Date:   Fri May 4 22:07:09 2018 -0400
+
+    These are some test files we used to test our code
+
+commit c39ec0ddab1e69f2250c3f47347f5eb9fe600617
+Author: Andrew <abell43@jhu.edu>
+Date:   Fri May 4 21:53:57 2018 -0400
+
+    README is complete
+
+commit 92e17712a8c967a686d13c8fd31faf95e9b29c3c
+Author: Andrew <abell43@jhu.edu>
+Date:   Fri May 4 21:47:33 2018 -0400
+
+    Finished program just adding final comments and README
+
+commit 31adcfb837fa1dd314ca24ab669bba5bdf25379b
+Author: Andrew <abell43@jhu.edu>
+Date:   Fri May 4 12:42:20 2018 -0400
+
+    Project.zip not loading for some reason
+
+commit 5f124611ab1ee39f7ac92f2f15b5e9d6dfddf95e
+Author: Andrew <abell43@jhu.edu>
+Date:   Fri May 4 12:39:40 2018 -0400
+
+    Forgot to add gitlog.txt
+
+commit ed30f3701d0545611e678be3a54db8d47cdfe175
+Author: Andrew <abell43@jhu.edu>
+Date:   Fri May 4 12:37:58 2018 -0400
+
+    Put all files into a zip folder
+
+commit 9e57286015af2f7ea8fae39acbed435e1d89da04
+Author: Andrew <abell43@jhu.edu>
+Date:   Fri May 4 12:32:35 2018 -0400
+
+    Submitting project to check for compiler errors now :)
+
+commit ad53c445c5f73f0fa41596dc3a2e849b094d74c6
+Author: Andrew <abell43@jhu.edu>
+Date:   Thu May 3 18:59:25 2018 -0400
+
+    Added more comments and started to make it shorter
+
+commit c9f07a68d7c2c6f1fe9f236a722bed232c25437d
+Author: Andrew <abell43@jhu.edu>
+Date:   Thu May 3 17:23:50 2018 -0400
+
+    Checking comments
+
+commit 0253c0e029a3cccab34b01fdf5f1612429887fd4
+Author: Andrew <abell43@jhu.edu>
+Date:   Wed May 2 20:15:44 2018 -0400
+
+    Mystery works all left is testing it
+
+commit 347be4c58a47af138bcebb13ff24ec1fb75131fc
+Author: Andrew <abell43@jhu.edu>
+Date:   Wed May 2 19:59:46 2018 -0400
+
+    Finished Stalemate game is done hopefully doing Mystery Piece
+
+commit ea7f6cce2b44ef53250801e68cb04cb495d2eb91
+Author: Debanik Purkayastha <dpurkay1@jhu.edu>
+Date:   Wed May 2 18:12:27 2018 -0400
+
+    saving and loading
+
+commit eeadf64cfe22f8e20ce62685a481d3aaf14e99d3
+Author: Andrew <abell43@jhu.edu>
+Date:   Wed May 2 17:57:31 2018 -0400
+
+    Load and Save coming
+
+commit a5cac9bb6b27ee2d25a54b619ce288a82757b5d9
+Author: Andrew <abell43@jhu.edu>
+Date:   Tue May 1 18:45:48 2018 -0400
+
+    Stalemate :D
+
+commit 4d803f7400342915d83a021e6b2ddb7318938f8b
+Author: Andrew <abell43@jhu.edu>
+Date:   Tue May 1 18:21:09 2018 -0400
+
+    Checkmate finally workd :)
+
+commit 40b3fbc32e4e9e489652198b7955a8e59c55da94
+Author: Andrew <abell43@jhu.edu>
+Date:   Tue May 1 10:33:48 2018 -0400
+
+    Found the reason for bug. It makes the first avaiable move to get out of check without using user input
+
+commit 3f4951d8c3166e468fe7beb70c226bd359b4622a
+Author: Andrew <abell43@jhu.edu>
+Date:   Mon Apr 30 20:25:17 2018 -0400
+
+    Nearly done with checkmate just testing some weird stuff
+
+commit 9b952b7904c62959ec98ef5fbd5b920757da86d9
+Author: Andrew <abell43@jhu.edu>
+Date:   Mon Apr 30 14:33:09 2018 -0400
+
+    Fixed where moving a piece out of kings way forcing check would still go through
+
+commit 85bc289219bba94a3e44c800c3a1a75b0004abe5
+Author: Andrew <abell43@jhu.edu>
+Date:   Mon Apr 30 14:09:36 2018 -0400
+
+    Fixed being able to move into check
+
+commit 43f7a5fd7cdc907036cc4c669cea19a421daa22b
+Author: Andrew <abell43@jhu.edu>
+Date:   Mon Apr 30 12:51:20 2018 -0400
+
+    Finished check and movement in check
+
+commit 36046d34b84e7eaff826f6b1219828517da877d4
+Author: Andrew <abell43@jhu.edu>
+Date:   Sun Apr 29 15:52:18 2018 -0400
+
+    Made gitlog
+
+commit 835fa8b17827490b12ce601cf409293814c31fae
+Author: Andrew <abell43@jhu.edu>
+Date:   Sun Apr 29 15:46:45 2018 -0400
+
+    Worked on check, method works but not movement in check :(
+
+commit 7190ddf3b8ac64828c515a131c0758f8ae16d4a1
+Author: Debanik Purkayastha <dpurkay1@jhu.edu>
+Date:   Fri Apr 27 18:37:58 2018 -0400
+
+    piece display
+
+commit 0538fd49248037391a1e065a7d7031b636bd6598
+Author: Andrew <abell43@jhu.edu>
+Date:   Fri Apr 27 16:29:14 2018 -0400
+
+    Made .cpp files for every piece except Mystery piece. Added all .o files in Makefile
+
+commit fbeb18381d32efdd23a29943fa09fbdc4436dbc1
+Author: Debanik Purkayastha <dpurkay1@jhu.edu>
+Date:   Fri Apr 27 09:48:43 2018 -0400
+
+    pretty board
+
+commit 92f4de675db509205d58892764f1b95578b2846f
+Author: Andrew <abell43@jhu.edu>
+Date:   Thu Apr 26 17:24:41 2018 -0400
+
+    Finished move and stopped passing over pieces. Capture works except for pawn
+
+commit 363cbc3a2579ae923372df15db4c2138dabaa52a
+Author: Andrew <abell43@jhu.edu>
+Date:   Thu Apr 26 12:53:18 2018 -0400
+
+    Finished move function made it so pieces that aren't knight move through each other.
+
+commit b6b2156b7c4040ac0ae9736965f895d9160c4edd
+Author: Andrew <abell43@jhu.edu>
+Date:   Thu Apr 26 10:21:02 2018 -0400
+
+    Finished movement command, Added get_occ function
+
+commit c18a3dd71774441ae0b80b5728af2c16fd7991d6
+Author: Andrew <abell43@jhu.edu>
+Date:   Thu Apr 26 09:52:18 2018 -0400
+
+    Added delete piece method and check for valid number of kings
+
+commit 7dc44b3ede2e3420c6cddbd42cd3cee4eee16db8
+Author: Andrew <abell43@jhu.edu>
+Date:   Wed Apr 25 17:50:56 2018 -0400
+
+    Printed Board
+
+commit 0cfa344d59a23fb0f68533a383895f15f708b7b3
+Author: Andrew <abell43@jhu.edu>
+Date:   Wed Apr 25 17:35:44 2018 -0400
+
+    Added more tests to test1
+
+commit 7e73696ac71318f67a84f0426a450e64edffc14b
+Author: Andrew <abell43@jhu.edu>
+Date:   Wed Apr 25 17:34:54 2018 -0400
+
+    Finished Pawn.h movement
+
+commit 617cb8461cc83d56f041318d607c03d90e3a1779
+Author: Debanik Purkayastha <dpurkay1@jhu.edu>
+Date:   Tue Apr 24 18:52:10 2018 -0400
+
+    wrote legal move shapes for pieces (except pawn), created a test driver
+
+commit 9ac8f35db50f96a09995b7db2850a5e90f97b8d0
+Author: Andrew <abell43@jhu.edu>
+Date:   Tue Apr 24 18:19:05 2018 -0400
+
+    Made a test file
+
+commit 292c03ecae67428d62bb6872a0a0ec203117d0bc
+Author: Andrew <abell43@jhu.edu>
+Date:   Tue Apr 24 18:14:46 2018 -0400
+
+    Added a test to a Makefile
+
+commit 361e4b6a4bb331792eb0aa34102a651b0d667319
+Author: Debanik Purkayastha <dpurkay1@jhu.edu>
+Date:   Tue Apr 24 17:46:35 2018 -0400
+
+    legal move shape implementations
+
+commit 772929574030156813bf3d399a60714ecac52dd9
+Author: Andrew <abell43@jhu.edu>
+Date:   Thu Apr 19 09:26:47 2018 -0400
+
+    Retrying start project commit
+
+commit 80422af421964c0bb3298822b59330f8d176a997
+Author: Andrew <abell43@jhu.edu>
+Date:   Thu Apr 19 09:21:22 2018 -0400
+
+    Started final project got all files
